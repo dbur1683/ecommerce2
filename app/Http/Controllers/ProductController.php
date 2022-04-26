@@ -8,9 +8,9 @@ class ProductController extends Controller
 {
 public function register(){
     return view('product.register');
-}
-use App\Http\models;
-public function store(request $request){
+
+ function store(request $request) 
+{
     $product=new product();
     $product->name=$request->name;
     $product->unit=$request->unit;
@@ -21,5 +21,6 @@ public function store(request $request){
     echo 'record saved successfully';
     else
     echo 'something went wrong try agein';
+}
 }
 }

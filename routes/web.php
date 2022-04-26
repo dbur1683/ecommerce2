@@ -8,5 +8,6 @@ Route::get('/',function () {
     return view('welcome');
 });
 
-Route::get('product.register',[productControllerr::class,'register']) ;
-Route::post('product.register',[productController::class,'store']) ;
+Route::get('/product/register',[ProductController::class,'register'])->name('product/register');
+Route::post('product.register',[ProductController::class,'store'])->name('product/register');
+
