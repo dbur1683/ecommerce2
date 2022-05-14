@@ -1,13 +1,12 @@
 <?php
-
+use App\Models\category;
 use Illuminate\Support\Facades\Route;
-
-use app\http\Controller\ProductController;
+use App\Http\Controllers\categoryController;
 
 Route::get('/',function () {
     return view('welcome');
 });
 
-Route::get('/product/register',[ProductController::class,'register'])->name('product/register');
-Route::post('product.register',[ProductController::class,'store'])->name('product/register');
+Route::get('/category/register',[categoryController::class,'register'])->name('category/register');
+Route::post('category.register',[categoryController::class,'store'])->name('category/register');
 
