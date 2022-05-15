@@ -4,24 +4,10 @@
  <div class="row justify-content-center">
  <div class="col-md-8">
  <div class="card">
- <div class="card-header">{{ __('Products Registration') }}</div>
+ <div class="card-header">{{ __('product Registration  Form page') }}</div>
  <div class="card-body">
- <form method="POST" action="{{ route('products/register') }}"
->
- @csrf
- <div class="form-group row">
- <label for="name" class="col-md-4 col-formlabel text-md-right">{{ __('Products') }}</label>
- <div class="col-md-6">
- <input id="name" type="text" class="formcontrol @error('name') isinvalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="
-name" autofocus>
- @error('name')
- <span class="invalid-feedback" role="alert">
- <strong>{{ $message }}</strong>
- </span>
- @enderror
- </div>
- </div>
- @csrf
+ <form method="POST" action="{{ route('product/register') }}"
+>@csrf
  <div class="form-group row">
  <label for="id" class="col-md-4 col-formlabel text-md-right">{{ __('id') }}</label>
  <div class="col-md-6">
@@ -34,6 +20,20 @@ id" autofocus>
  @enderror
  </div>
  </div>
+ @csrf
+ <div class="form-group row">
+ <label for="name" class="col-md-4 col-formlabel text-md-right">{{ __('name') }}</label>
+ <div class="col-md-6">
+ <input id="name" type="text" class="formcontrol @error('name') isinvalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="
+name" autofocus>
+ @error('name')
+ <span class="invalid-feedback" role="alert">
+ <strong>{{ $message }}</strong>
+ </span>
+ @enderror
+ </div>
+ </div>
+
  <div class="form-group row">
  <label for="unit" class="col-md-4 col-formlabel text-md-right">{{ __('unit') }}</label>
  <div class="col-md-6">
