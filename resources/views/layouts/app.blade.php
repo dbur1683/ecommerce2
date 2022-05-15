@@ -34,15 +34,15 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-
-<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{{ __('category') }}</a>
-
-<ul class="dropdown-menu">
- <li>
-<a class="dropdown-item" href="{{ route('category/register') }}">{{ __('New category') }} </a>
-</li>
- </ul>
-</ul> 
+ 
+ <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">{{ __('category') }}</a>
+  
+ <ul class="dropdown-menu">
+  <li>
+ <a class="dropdown-item" href="{{ route('category/register') }}">{{ __('New category') }} </a>
+ </li>
+  </ul>
+ </ul> 
 
                     </ul>
 
@@ -91,3 +91,4 @@
     </div>
 </body>
 </html>
+

@@ -1,16 +1,15 @@
 <?php
-
 namespace App\Models;
-use App\Http\Controllers\categoryController;
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class category extends Model
 {
     use HasFactory;
-    protected $fillable=['id',
-        'name', 
-    
-
+    protected $fillable=[
+     
+        'name'
     ];
 }
+
